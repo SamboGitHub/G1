@@ -46,6 +46,7 @@ int main(int argc, char **argv)
 
   std::string server_address_string(argv[1]);
   std::string server_port_string(argc == 3 ? argv[2] : DEFAULT_PORT);
+    std::string server_port_string(argc == 3 ? argv[2] : DEFAULT_PORT);
 
   try {
     ip4_address_t server_address(server_address_string, server_port_string);
